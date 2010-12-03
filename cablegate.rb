@@ -72,7 +72,7 @@ class Cablegate < Sinatra::Base
 ######################   ROUTES   #################################
 
   get '/' do
-    flash.now[:message] = "Welcome to the Cablegate app"
+    flash.now[:message] = "This is a simple Cablegate mirror"
     haml :index
   end
 
