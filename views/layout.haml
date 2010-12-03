@@ -1,0 +1,16 @@
+!!!
+%html{:xmlns => "http://www.w3.org/1999/xhtml", "xml:lang" => "#{i18n.locale.code}", :lang => "#{i18n.locale.code}" }
+  %head
+    %meta{ :'http-equiv' => "Content-Type", :content => "text/html; charset=UTF-8"}
+    %link{ :href => "/static/css/cables.css", :rel => "stylesheet", :type => "text/css" }
+    %title #{flash[:message]}#{flash[:warning]}#{flash[:error]}#{flash[:tip]}
+  %body
+    #header
+      / template header content goes here
+    #content
+      / any flash messages.
+      =styled_flash
+      / the rest of the content goes here.
+      = yield
+    #footer
+      / template footer content goes here
