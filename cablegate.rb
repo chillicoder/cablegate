@@ -78,7 +78,7 @@ class Cablegate < Sinatra::Base
   configure :production do  
     set :environment, :production
     @@log = Logger.new(STDOUT)  # TODO: should look for a better option than this.
-    @@log.level = Logger::INFO
+    @@log.level = Logger::DEBUG
     @@log.info("Cablegate running in Production Mode")
 
     ActiveRecord::Base.logger = Logger.new(STDOUT)
