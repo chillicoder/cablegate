@@ -19,6 +19,23 @@ class Cablegate < Sinatra::Base
 
   @active_user = nil         # the active user is reloaded on each request in the before method.
 
+  class << self
+    def load_models!
+      if !@models_loaded
+        raise "No models folder found!" unless File.directory? models
+        Dir.glob("models/**.rb") { |m| require m }
+        @@log.debug("Models loaded")
+        @models_are_loaded = true
+      end
+    end
+  end
+
+  class << self
+    def announce!
+      @@log.debug("announcing to other mirrors.")
+    end
+  end
+
   # configuration blocks are called depending on the value of ENV['RACK_ENV] #=> 'test', 'development', or 'production'
   # on Heroku the default rack environment is 'production'.  Locally it's development.
   # if you switch rack environments locally you will need to reseed the database as it uses different databases for each obviously.
@@ -31,9 +48,16 @@ class Cablegate < Sinatra::Base
     ActiveRecord::Base.logger = Logger.new(STDOUT)
     ActiveRecord::Base.logger.level = Logger::WARN      #not interested in database stuff right now.
 
+    Time.zone = :utc
+    ActiveRecord::Base.time_zone_aware_attributes = true
+    ActiveRecord::Base.default_timezone = :utc
+
     dbconfig = YAML.load(File.read('config/database.yml'))
     ActiveRecord::Base.establish_connection dbconfig['development']
 
+    @models_are_loaded = false
+    load_models!
+    announce!
   end
 
   configure :production do  
@@ -45,9 +69,16 @@ class Cablegate < Sinatra::Base
     ActiveRecord::Base.logger = Logger.new(STDOUT)
     ActiveRecord::Base.logger.level = Logger::WARN
 
+    Time.zone = :utc
+    ActiveRecord::Base.time_zone_aware_attributes = true
+    ActiveRecord::Base.default_timezone = :utc
+
     dbconfig = YAML.load(File.read('config/database.yml'))
     ActiveRecord::Base.establish_connection dbconfig['production']
 
+    @models_are_loaded = false
+    load_models!
+    announce!
   end
 
   configure :test do  
@@ -59,9 +90,16 @@ class Cablegate < Sinatra::Base
     ActiveRecord::Base.logger = Logger.new(STDOUT)
     ActiveRecord::Base.logger.level = Logger::WARN      #not interested in database stuff right now.
 
+    Time.zone = :utc
+    ActiveRecord::Base.time_zone_aware_attributes = true
+    ActiveRecord::Base.default_timezone = :utc
+
     dbconfig = YAML.load(File.read('config/database.yml'))
     ActiveRecord::Base.establish_connection dbconfig['test']
 
+    @models_are_loaded = false
+    load_models!
+    announce!
   end
 
   # if there is a new locale setting in the request then use it.
@@ -73,7 +111,14 @@ class Cablegate < Sinatra::Base
 
   get '/' do
     flash.now[:message] = "This is a simple Cablegate mirror"
+    @mirrors = Mirror.active_mirrors
     haml :index
+  end
+
+  get '/announcment' do
+    content_type :json
+    # handle the incoming announcement
+    return {:lease_time => 3600 }.to_json
   end
 
 end

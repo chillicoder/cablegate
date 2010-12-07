@@ -1,5 +1,5 @@
 #details
-  %h3 A 'Cablegate' mirror app
+  %h3 A 'Cablegate' Smart Mirror
   %p<
     Wikileaks was taken down by in a blatant attack on free speech.
   %p<
@@ -9,3 +9,19 @@
     %a{ :href => '/index.html'} start here.
   %p<
     Built from release 201012061721.
+#mirrors
+  - if @mirrors.empty?
+    %p{:class => 'error'} There are NO mirrors loaded.
+  - else
+    %h2 Known Smart Mirrors.
+    %table
+      %tr<
+        %th Name
+        %th URI
+        %th Expires
+      - for m in @mirrors do
+        %tr<
+          %td #{m.name}
+          %td<
+            %a{:href => m.uri} #{m.uri}
+          %td #{m.lease_expires ? m.lease_expires : 'never' }
