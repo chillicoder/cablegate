@@ -11,16 +11,21 @@ require 'erb'
 require 'haml'
 require 'json'
 require 'time'
-require 'net/http'
+
+require 'sinatra/mirror_helpers'
 
 class Cablegate < Sinatra::Base
   enable  :sessions
   set :root, File.dirname(__FILE__)
   set :models, Proc.new { root && File.join(root, 'models') }
+  set :build_number, '201012070806'
+  
   register Sinatra::R18n
   register Sinatra::Flash
 
-  @active_user = nil         # the active user is reloaded on each request in the before method.
+  helpers Sinatra::MirrorHelpers
+
+  @me = nil # need to wait for any incoming request before we know what our host name is.
 
   class << self
     def load_models!
@@ -29,24 +34,6 @@ class Cablegate < Sinatra::Base
         Dir.glob("models/**.rb") { |m| require m }
         @@log.debug("Models loaded")
         @models_are_loaded = true
-      end
-    end
-  end
-
-  class << self
-    def announce!
-      @@log.debug("announcing to other mirrors.")
-      mirrors = Mirror.active_mirrors
-      mirrors.each do |m|
-        # announce self to m
-        @@log.debug("announcing to #{m.name} at #{m.uri}")
-        path = "/announcement"
-        req = Net::HTTP::Post.new(path, initheader = {'Content-Type' =>'application/json'})
-        req.body = { :name => 'name', :uri => 'http://cablegate.heroku.com', :build_number => '12345test'}.to_json
-        response = Net::HTTP.new(m.uri).start {|http| http.request(req) }
-        
-        # debugging
-        @@log.debug("Response #{response.code} #{response.message}: #{response.body}")
       end
     end
   end
@@ -72,7 +59,6 @@ class Cablegate < Sinatra::Base
 
     @models_are_loaded = false
     load_models!
-    announce!
   end
 
   configure :production do  
@@ -93,7 +79,6 @@ class Cablegate < Sinatra::Base
 
     @models_are_loaded = false
     load_models!
-    announce!
   end
 
   configure :test do  
@@ -114,7 +99,6 @@ class Cablegate < Sinatra::Base
 
     @models_are_loaded = false
     load_models!
-    announce!
   end
 
   # if there is a new locale setting in the request then use it.
@@ -128,7 +112,16 @@ class Cablegate < Sinatra::Base
     flash.now[:message] = "This is a simple Cablegate mirror"
     @mirrors = Mirror.active_mirrors
     my_uri = "http://#{request.host_with_port}"
-    @me = Mirror.find_by_uri(my_uri)
+    @me = know_thyself!(my_uri, options.build_number)
+    haml :index
+  end
+
+  get '/announce' do
+    flash.now[:message] = "Announcing Self to Mirrors"
+    @mirrors = Mirror.active_mirrors
+    my_uri = "http://#{request.host_with_port}"
+    @me = know_thyself!(my_uri, options.build_number)
+    announce!
     haml :index
   end
 
@@ -141,7 +134,7 @@ class Cablegate < Sinatra::Base
     mirror = JSON.parse request.body.read
     return {:error => "Invalid Mirror Data"}.to_json if mirror['name'] == nil || mirror['uri'] == nil || mirror['build_number'] == nill
     my_uri = "http://#{request.host_with_port}"
-    me = Mirror.find_by_uri(my_uri)
+    @me = know_thyself!(my_uri, options.build_number)
     return {:error => 'Announced to Self'} if mirror['uri'] == my_uri
     
     # add incoming mirror to db and set the lease_time
