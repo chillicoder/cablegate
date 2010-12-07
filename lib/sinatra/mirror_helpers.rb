@@ -30,23 +30,23 @@ module Sinatra
 
     def announce!
       if @me == nil
-        @@log.debug("I know not myself, and thus can't announce yet. Awaiting an incoming request to tell me where I am.")
+        puts "I know not myself, and thus can't announce yet. Awaiting an incoming request to tell me where I am."
       else
-        @@log.debug("announcing to other mirrors.")
+        puts "announcing to other mirrors."
         mirrors = Mirror.active_mirrors
         mirrors.each do |m|
           if m.uri == @me.uri
-            @@log.debug("No need to announce to myself")
+            puts "No need to announce to myself"
           else
             # announce self to m
-            @@log.debug("announcing to #{m.name} at #{m.uri}")
+            puts "announcing to #{m.name} at #{m.uri}"
             path = "/announcement"
             req = Net::HTTP::Post.new(path, initheader = {'Content-Type' =>'application/json'})
             req.body = { :name => @me.name, :uri => @me.uri, :build_number => @me.build_number}.to_json
             response = Net::HTTP.new(m.uri).start {|http| http.request(req) }
         
             # debugging
-            @@log.debug("Response #{response.code} #{response.message}: #{response.body}")
+            puts "Response #{response.code} #{response.message}: #{response.body}"
           end
         end
       end
