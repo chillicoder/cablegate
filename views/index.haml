@@ -7,8 +7,12 @@
   %p<
     There is more to come but in the meantime 
     %a{ :href => '/index.html'} start here.
-  %p<
-    Built from release 201012070806.
+  - if @me != nil
+    %p<
+      This Mirror is running at #{@me.uri} Built from release #{@me.build_number}.
+  -else
+    %p<
+      This Mirror is running at #{request.host_with_port} but is not yet in the Mirrors Database.
 #mirrors
   - if @mirrors.empty?
     %p{:class => 'error'} There are NO mirrors loaded.
@@ -18,10 +22,12 @@
       %tr<
         %th Name
         %th URI
+        %th Build
         %th Expires
       - for m in @mirrors do
         %tr<
           %td #{m.name}
           %td<
             %a{:href => m.uri} #{m.uri}
+          %td #{m.build_number}
           %td #{m.lease_expires ? m.lease_expires : 'never' }

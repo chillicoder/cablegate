@@ -7,6 +7,7 @@ gem 'bcrypt-ruby'
 gem 'pony'
 gem 'activerecord', '>=3.0.0'
 gem 'rake'
+gem 'json'
 
 group :development do
 	gem 'sqlite3-ruby'
