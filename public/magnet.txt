@@ -1,0 +1,776 @@
+cablegate-201011301013.7z.torrent:
+    file length: 1036798
+    file md5sum: d61f0e5567c50c57cd2f06e768083aa3
+    file sha256: 321da97215059c710bb16a73315c63c9c4e69dee48b56f8a66f50dc10774e47c
+    magnet link: magnet:?xt=urn:btih:SGMU5GEDO6ZDLD553G7OMDSUPDG6OIL5
+
+
+cablegate-201011301036.7z.torrent:
+    file length: 1038254
+    file md5sum: 6c0eeaf01621278fab8c4a046d73aa80
+    file sha256: 50cd80e7d264230666aca77cb6a68b5351ef2c735a16f724982113f4e252c08a
+    magnet link: magnet:?xt=urn:btih:3U76ZHZ7SRDFDJ5SLHZDOKB2TGB4MJVP
+
+
+cablegate-201011301101.7z.torrent:
+    file length: 1037823
+    file md5sum: b0bd3ed4962a966a87d524584da8db64
+    file sha256: c66a79c6ebbcf991da4e2b2b99a8541d578fd36ef9e2605016818dd2f78dd92f
+    magnet link: magnet:?xt=urn:btih:6QITOAPLJCJUBI4L7DNBM2L7WEQMZOXR
+
+
+cablegate-201011301201.7z.torrent:
+    file length: 1057815
+    file md5sum: 5578dc89ead0ceb0a53ae7cbf3dfd639
+    file sha256: f46221c6cd56ce7a08e9d3bec463a67f2a1f6cd756078a0861422449691b23ca
+    magnet link: magnet:?xt=urn:btih:BIXZIBT2SK7OXHY5PACIOFF5ID5BUGE2
+
+
+cablegate-201011301301.7z.torrent:
+    file length: 1057720
+    file md5sum: 25f9634295391a5b656c732d66195092
+    file sha256: 5eea6e56cde82fd68d13fa4c8a29272cae39fb6126a6a4386b8468e2f5eda740
+    magnet link: magnet:?xt=urn:btih:EQ6QMEZKRBNXUXYPVCNKW4O5BPAJACQF
+
+
+cablegate-201011301401.7z.torrent:
+    file length: 1057720
+    file md5sum: 25f9634295391a5b656c732d66195092
+    file sha256: 5eea6e56cde82fd68d13fa4c8a29272cae39fb6126a6a4386b8468e2f5eda740
+    magnet link: magnet:?xt=urn:btih:QYTKRQSVEV3JN5CONIVZP7Y5VSUJ7LMH
+
+
+cablegate-201011301424.7z.torrent:
+    file length: 1057720
+    file md5sum: 25f9634295391a5b656c732d66195092
+    file sha256: 5eea6e56cde82fd68d13fa4c8a29272cae39fb6126a6a4386b8468e2f5eda740
+    magnet link: magnet:?xt=urn:btih:ZAHFAXADKRBS3AOLHO4PE5NAQYX45AWJ
+
+
+cablegate-201011301426.7z.torrent:
+    file length: 1057720
+    file md5sum: 25f9634295391a5b656c732d66195092
+    file sha256: 5eea6e56cde82fd68d13fa4c8a29272cae39fb6126a6a4386b8468e2f5eda740
+    magnet link: magnet:?xt=urn:btih:GKD7DLXENPLHED7BJLU26FZBEOJOWTEK
+
+
+cablegate-201011301501.7z.torrent:
+    file length: 1072293
+    file md5sum: fbbda9275f316f5bd0457696bec21114
+    file sha256: e437908c050674e3aa4a611453c852ee9925a700f19cd26ed832401018c47d33
+    magnet link: magnet:?xt=urn:btih:EE73FJDN4FL7D4GCYSZPMPTYXXIDXOZU
+
+
+cablegate-201011301601.7z.torrent:
+    file length: 1059651
+    file md5sum: 83bbc8bce06cb34af42c31badae6ec70
+    file sha256: 72e279195bb4d34154f1bb9e84074d9f584437491b0bdef84e55a0da651ae716
+    magnet link: magnet:?xt=urn:btih:N5ESZLX3435LFYKIW2XO62N3ESIWGN7A
+
+
+cablegate-201011301701.7z.torrent:
+    file length: 1059826
+    file md5sum: 810f8f58840f17c7011ab941829613c9
+    file sha256: 84711e46e44a4033deb63ea07eeed26323bb02c0dee11aafa819844421518105
+    magnet link: magnet:?xt=urn:btih:RVNQXJ7TGCN2CNT3KNZHPRC6QDWU3IS3
+
+
+cablegate-201011301737.7z.torrent:
+    file length: 1064877
+    file md5sum: a264c0cdec80d15eaf57bbafb5279482
+    file sha256: 4a47f4927a66c61663cbefe090889ca5951a16271b0943a18e3c25f42450eed6
+    magnet link: magnet:?xt=urn:btih:XZPHFQ5BRPYQ4SJAOF47V7CKKGAMN525
+
+
+cablegate-201011301801.7z.torrent:
+    file length: 1064860
+    file md5sum: d2c18086a4aa7173786240ad70070f66
+    file sha256: 56f0a7c91ea279c36b9c84d95f6643b2bea685efd561f2ca0bd4717f869fc9be
+    magnet link: magnet:?xt=urn:btih:DV7YWLFU4KLUMSUZ6UBTG64VJIJG55V2
+
+
+cablegate-201011301901.7z.torrent:
+    file length: 1065753
+    file md5sum: 7cddc68f4c868b3ece5fb075a8cdbc50
+    file sha256: c6b280f09d423fecd5a31c84999212ca6213c7da9a217a3a21c65798fd1854ac
+    magnet link: magnet:?xt=urn:btih:54LARBN4Z4DFMAKBBXDCGNWCYYRN4RS6
+
+
+cablegate-201011301909.7z.torrent:
+    file length: 1065635
+    file md5sum: 224fc17d83f02d779dfd59d64c8f1b2a
+    file sha256: c85712b04c1d90985394ef809d3064af838814d22566d6bb94c6c28d0a655f88
+    magnet link: magnet:?xt=urn:btih:GZHM43J736UXH2NLXG4UCEQ6Y3DVS3ZK
+
+
+cablegate-201011301912.7z.torrent:
+    file length: 1065621
+    file md5sum: ef271df3011e6061a44c3647015b37d6
+    file sha256: aa765e2832c4dbf2b31ef55c25e37886ec8550dd23145dc00d9b234d5d37b728
+    magnet link: magnet:?xt=urn:btih:HRV7T27O4UV77P37JS76RD6SKHVHKO22
+
+
+cablegate-201011301942.7z.torrent:
+    file length: 1065773
+    file md5sum: 965b8f3c695127a5f3c1c93bab606c29
+    file sha256: a144751393760b54dcc223b564f085a251e2c685cb0093db6ebb703949cc6b6c
+    magnet link: magnet:?xt=urn:btih:74JBTVSC5PDUGBFTDQ7KTRENYQ3PNZB6
+
+
+cablegate-201011302001.7z.torrent:
+    file length: 1065680
+    file md5sum: 77d90b134e1c227a585684edc8b5a681
+    file sha256: 7d301f1d92beb545054e06f0fd9cc536024ccdd33e17670382d1c00e543dbf9d
+    magnet link: magnet:?xt=urn:btih:AENT4B6KQCE34NW4L7NBOZESL5XPKJQ2
+
+
+cablegate-201011302101.7z.torrent:
+    file length: 1065834
+    file md5sum: b62c895d665bd2df5f101b2adabf5368
+    file sha256: 3b3b79ad4a49d22530872452cc62057074687417252477ca49a14dc56cad2c8b
+    magnet link: magnet:?xt=urn:btih:FN6M264XIWZK3AYM7KYROGRVFXFJ22KL
+
+
+cablegate-201011302201.7z.torrent:
+    file length: 1074380
+    file md5sum: 338e02b43e5e5c347180a6a2b17710a7
+    file sha256: 91aa86a824e858147ba3e9ef9b76dea531f206461cfd1e1ed649ecef8efeccdb
+    magnet link: magnet:?xt=urn:btih:FUTBC5MCBIDBDY44IS4BKZERY2TBAI7M
+
+
+cablegate-201011302301.7z.torrent:
+    file length: 1060809
+    file md5sum: cfd4eb14a17f13aca36de221fdb187a9
+    file sha256: 0f3bbdf6012221d4d7cbdfda929c1b57c1dd440c20291d7b1632cb8934f68ea7
+    magnet link: magnet:?xt=urn:btih:GJEOV4PVJJZWB5ZTSUO5X5XWP3RY4BUV
+
+
+cablegate-201012010001.7z.torrent:
+    file length: 1358684
+    file md5sum: 0f9275de0824b8d45937b646067f8647
+    file sha256: 3446df7533f921250ada9aef25249cdfe15841e79aee4f3cf09deaa7c4709652
+    magnet link: magnet:?xt=urn:btih:PJBTNXYO2JKOHLQF32JF2LQKQKRDRXBK
+
+
+cablegate-201012010101.7z.torrent:
+    file length: 1479779
+    file md5sum: 1925e3397c42e582d416f4007f236beb
+    file sha256: 070b5b1ccc986d3d2a10eb785e1f49f723cdcb88012d057adf52fb5b70a89680
+    magnet link: magnet:?xt=urn:btih:P3PB6KH5PBIUCAMHTT5ZZK4JNDLIYEXA
+
+
+cablegate-201012010201.7z.torrent:
+    file length: 1570887
+    file md5sum: 0f0386b693e05e63297ba77e02e7f70b
+    file sha256: baedfd5a369cea304aaa09a867e373517c505b05d4c55985526ee5a25a2c16be
+    magnet link: magnet:?xt=urn:btih:U3C7ZZAEX4NVMSRHCU5OZSHO7XNYHNTB
+
+
+cablegate-201012010301.7z.torrent:
+    file length: 1588737
+    file md5sum: 6f0f455645cb7ae4bb1a2e118ffbd844
+    file sha256: 4ea54f36acd409744a2a0efcda7bf1eb08b9d46987e34508501341f858701ded
+    magnet link: magnet:?xt=urn:btih:6HJMM5NIUHPSSC437IDYVQGQFVGXMIMD
+
+
+cablegate-201012010401.7z.torrent:
+    file length: 1588666
+    file md5sum: a805d3de032a3675a7fc4f2b81beefc9
+    file sha256: 352edb9bc4ac76daac5eadf16b16eb0b5bb32de198805275cdede417b1d5dead
+    magnet link: magnet:?xt=urn:btih:URJVE2IKU4OKBJQWLI22UQOSIEJMW455
+
+
+cablegate-201012010501.7z.torrent:
+    file length: 1588730
+    file md5sum: 5c052311f5f5b5023d9c28dbf35d17e3
+    file sha256: 650a2b875db6e81d6ea8aa4852d66d4a2513da929629d838276f98db7b639a09
+    magnet link: magnet:?xt=urn:btih:5QNNW74RCXHNIOV3N5PFZB2QUPGN5YC3
+
+
+cablegate-201012010601.7z.torrent:
+    file length: 1588730
+    file md5sum: 5c052311f5f5b5023d9c28dbf35d17e3
+    file sha256: 650a2b875db6e81d6ea8aa4852d66d4a2513da929629d838276f98db7b639a09
+    magnet link: magnet:?xt=urn:btih:FKJN6B3FDVCTODTX447FMA5HRGGXKCCX
+
+
+cablegate-201012010701.7z.torrent:
+    file length: 1588666
+    file md5sum: a805d3de032a3675a7fc4f2b81beefc9
+    file sha256: 352edb9bc4ac76daac5eadf16b16eb0b5bb32de198805275cdede417b1d5dead
+    magnet link: magnet:?xt=urn:btih:RTXCUIALUYU67P64EFZOW75HHQZBI3I2
+
+
+cablegate-201012010801.7z.torrent:
+    file length: 1588730
+    file md5sum: 5c052311f5f5b5023d9c28dbf35d17e3
+    file sha256: 650a2b875db6e81d6ea8aa4852d66d4a2513da929629d838276f98db7b639a09
+    magnet link: magnet:?xt=urn:btih:GMXOKPLM5A5UWCIIIAAKJTE3OV5OXEIJ
+
+
+cablegate-201012010901.7z.torrent:
+    file length: 1595482
+    file md5sum: 33c5066937ca7b0aa9436192c2d35c9a
+    file sha256: 90db066f7568659711fd0068289bbfd79425fc246aac73095d573a107c0d0639
+    magnet link: magnet:?xt=urn:btih:C42XCBR7UYAKEXJMMUTSG7CE2JAFBMBN
+
+
+cablegate-201012010946.7z.torrent:
+    file length: 1597612
+    file md5sum: c65a19df99a79f6dcda5d31ef1d954f8
+    file sha256: d2075ce1957c54e862365605288dfd42ba8be1e484c0bc5276ffef38f9701c7d
+    magnet link: magnet:?xt=urn:btih:4FS6QOMWKOABRZBXWF2PSO2D2NFNWYFR
+
+
+cablegate-201012010951.7z.torrent:
+    file length: 1597296
+    file md5sum: c304e484c10edc687dcc824e1d020272
+    file sha256: 29ea048ed1aaf1376c2a90285323b7d2df9c951b0f949df640d57fb289bf19a8
+    magnet link: magnet:?xt=urn:btih:7BGX5NTFRR4AZJBIUJFEGNQAFLMBI5RM
+
+
+cablegate-201012011001.7z.torrent:
+    file length: 1597296
+    file md5sum: c304e484c10edc687dcc824e1d020272
+    file sha256: 29ea048ed1aaf1376c2a90285323b7d2df9c951b0f949df640d57fb289bf19a8
+    magnet link: magnet:?xt=urn:btih:7EDE4HIXWYMDTYDZEG5ENQUMXBYZGIB3
+
+
+cablegate-201012011021.7z.torrent:
+    file length: 1597082
+    file md5sum: df499b6fcdaf18d3b6f6ecb191897b56
+    file sha256: 337236f16664ec950ec5e48c6ae2b2b3388ae4bff6c9ede4eb56d103cba19615
+    magnet link: magnet:?xt=urn:btih:U7ME37ORMZL2KO5E25SKLAMY2EU3VF42
+
+
+cablegate-201012011101.7z.torrent:
+    file length: 1610679
+    file md5sum: fe768eb170015e41848b428e01889031
+    file sha256: 9e466dd153a778d67a5c344df39a5681f7937a1cb97cf1842b37897d6adafbc3
+    magnet link: magnet:?xt=urn:btih:J6HOJMPHVUCU5GA2MUBPRWFA4OUUSM2K
+
+
+cablegate-201012011201.7z.torrent:
+    file length: 1639086
+    file md5sum: 425fc7a9868969d25b4a074e3f2b9a8e
+    file sha256: 5fe2a0a71b03bcb693592e34656d156d13181dba98c1ce57c65e5bb9b8f2e45a
+    magnet link: magnet:?xt=urn:btih:GNEUJ35HIQDQSPDY4QNKO6M4HCVCNR7Q
+
+
+cablegate-201012011301.7z.torrent:
+    file length: 1640847
+    file md5sum: 915ff01f00a0f5f9ba6096a8f517dbec
+    file sha256: b5179c6b2c921a671e60015befaf03e20690c4d89b1813fbd579007d52d61580
+    magnet link: magnet:?xt=urn:btih:TZWAKUOGVN7RAECVO3PI52GES2GFHTHQ
+
+
+cablegate-201012011401.7z.torrent:
+    file length: 1641129
+    file md5sum: 06f77325abe2d1e2d8ea29119615dbd8
+    file sha256: ee3328e6b084493969ddc671a7c5b50c21d3f99c9bea5c167b403d0ff9e15dc0
+    magnet link: magnet:?xt=urn:btih:24KSWKT3MZ5WWPQP43KYVBAN3T7YQST7
+
+
+cablegate-201012011501.7z.torrent:
+    file length: 1645527
+    file md5sum: c315a5ede93787df4baf920cee533e3f
+    file sha256: 01df707279f0ef27d76eba7d65924b19c6f0eb96340d9bb91eabf0f2682b9f22
+    magnet link: magnet:?xt=urn:btih:4B4POZL4YUHWRFC67XDOVBMMIBAQMUPH
+
+
+cablegate-201012011601.7z.torrent:
+    file length: 1645527
+    file md5sum: c315a5ede93787df4baf920cee533e3f
+    file sha256: 01df707279f0ef27d76eba7d65924b19c6f0eb96340d9bb91eabf0f2682b9f22
+    magnet link: magnet:?xt=urn:btih:ZBPJMJXHMES6Q5ORHKIG2WN25TYC65FH
+
+
+cablegate-201012011701.7z.torrent:
+    file length: 1645533
+    file md5sum: c1718e30d14f5eb7dc52e253d93689dd
+    file sha256: 33b5ef9f596a31383d26b6350d509846b7d4f219185868a3fb76f7aae9a528c1
+    magnet link: magnet:?xt=urn:btih:MMSTJBHMITINTJHQDE5WNFYGXFLX6C6P
+
+
+cablegate-201012011801.7z.torrent:
+    file length: 1688607
+    file md5sum: 99bccbfafbfcb129dc1476c2d29e46e3
+    file sha256: 50e1692201400eec80b45bfbcd3285f6a9213b401e2dfba3d284192d587a0905
+    magnet link: magnet:?xt=urn:btih:XZMJWEROICYTJ433T6GMCWB47XR5LA2T
+
+
+cablegate-201012011901.7z.torrent:
+    file length: 1690515
+    file md5sum: 4210e6373fceaefbaf6b54468e58b24c
+    file sha256: 1357b0723ba652786f5e87597d721aa79964ae453717364d9a909ad3bbf9dfbf
+    magnet link: magnet:?xt=urn:btih:OI3XBWZMFWJUSMRNXWGOAFSOZGDSRNUN
+
+
+cablegate-201012011944.7z.torrent:
+    file length: 1706469
+    file md5sum: 6b68e11d01617227dbf79a32b1a3ad1b
+    file sha256: f4eb62b45408e08ec8328e4cae69ea03dbdaedfbf42837a6822a31792960e3a7
+    magnet link: magnet:?xt=urn:btih:5OXL2MPB2E2N7XGL4PV2O7GZHDSTXGXU
+
+
+cablegate-201012012001.7z.torrent:
+    file length: 1709924
+    file md5sum: 9b0195026c7d77d04931448610489cbc
+    file sha256: ac2fe6158b0a6c73d23d18a930d9924dd83d15e894d08552ed0b2048fc4ced4e
+    magnet link: magnet:?xt=urn:btih:NQLR6SVC32LZJDMPMZN5QLGZ463YEBGJ
+
+
+cablegate-201012012101.7z.torrent:
+    file length: 1718179
+    file md5sum: 897bd86b5fa68227429fc8f8ffc9a792
+    file sha256: cff738e3e553bd9f029dc9dc914653f1dac0551fd5da3586e8279965b4f4ff7a
+    magnet link: magnet:?xt=urn:btih:VNDYICSOKKTF5WDWCYXRYMKN5SNJTLKY
+
+
+cablegate-201012012201.7z.torrent:
+    file length: 1854117
+    file md5sum: de2d71f7a5888d509bc7e4cb9adc3ec6
+    file sha256: f93ef6cea02b5686fe05cbacd3b26d32f525a2cf2b4ce2505fed5847d26f91ce
+    magnet link: magnet:?xt=urn:btih:5METX5MXI7GFRA3MGX7XBY57TGF65VG2
+
+
+cablegate-201012012301.7z.torrent:
+    file length: 1854185
+    file md5sum: bbb8b080f733408a5ef19d43e62817c5
+    file sha256: 3add858149fc95297c4b55cfba93252eb183c58c00f9bb7239ce8556174f0d8a
+    magnet link: magnet:?xt=urn:btih:QQRH2AWHPSL2OJOFONKRTPU5JBGB7ORC
+
+
+cablegate-201012020001.7z.torrent:
+    file length: 1890989
+    file md5sum: 9305d043fda0c80cf3b82d87cb46f3d8
+    file sha256: 5480e74c1f6e9848490493d57f97dc050afefb8bb21958f02db07225c687c49a
+    magnet link: magnet:?xt=urn:btih:VLPKPS2DO2D4ONWLJFEOK3DH2NHZ5KMK
+
+
+cablegate-201012020101.7z.torrent:
+    file length: 1961148
+    file md5sum: 9e9a55bd97f00d596065e699cbce4314
+    file sha256: 2f02fa1a0670d02fbb574c3098bb6b50d75d1a68b1ab778fd53c17f63b758b93
+    magnet link: magnet:?xt=urn:btih:HZGMA364EYG2CNEULNCGTD3VT7HBT5ZO
+
+
+cablegate-201012020201.7z.torrent:
+    file length: 2013902
+    file md5sum: 78cebc730fa0474385a7191a9d58418e
+    file sha256: 7042e7f2f3968980208bdd00cde1831d92d0e50467aaabcea4403caf976b7c57
+    magnet link: magnet:?xt=urn:btih:A6ALGGQ4X2465XYP3Y5VIF6HK3YOG4B6
+
+
+cablegate-201012020301.7z.torrent:
+    file length: 2013896
+    file md5sum: a15725695bd240009e0622d1798566d7
+    file sha256: b4067d1a37f7b3c1ef0e6691de193f675a4dadaa52887cbb3f5540abc13a6423
+    magnet link: magnet:?xt=urn:btih:2SNRIQGFSQ4MEUOEOWXL2RRTFVBJTJUY
+
+
+cablegate-201012020401.7z.torrent:
+    file length: 2014196
+    file md5sum: ef35444a774424d39bfed77133f72438
+    file sha256: 3539f1c43fcd9b6a922313eb0770e40ebb44f6395a6163e1a486df0e793f3765
+    magnet link: magnet:?xt=urn:btih:INGTEL5O6V4CR7UEFJMHANCMCBISETX7
+
+
+cablegate-201012020501.7z.torrent:
+    file length: 2014110
+    file md5sum: 8815978091c7689de0569ebb1c63134a
+    file sha256: f3be3abeef7cb89ba8be90db72f13a340814650194e683912e38da6e580fde06
+    magnet link: magnet:?xt=urn:btih:ORWINAD63QHV2GJWUOWHIKSWNFGTC7AD
+
+
+cablegate-201012020601.7z.torrent:
+    file length: 2021304
+    file md5sum: 6d9061243a99193e10d05dccba8c6ff6
+    file sha256: db53b7f397d8503718b85008921b9fd9e9336f5f2a35a2936864699a470d6790
+    magnet link: magnet:?xt=urn:btih:K4QUGS332BUUHMSWUU4YGFEREJPCNO4M
+
+
+cablegate-201012020701.7z.torrent:
+    file length: 2021325
+    file md5sum: e4eb7d7c7b9e204972bd590842c8c71b
+    file sha256: d9d7932683a81918422b38bc62ff09895431e227abec9f7c573136d77c5cb767
+    magnet link: magnet:?xt=urn:btih:QV67CMAP644I3VCP6UJ5IVYDX2VR7VWJ
+
+
+cablegate-201012020801.7z.torrent:
+    file length: 2028432
+    file md5sum: 796f8f157f372aafe879e50a63f6c5fe
+    file sha256: b161ddb2ed11634455d3405097418efb6f88a39ff2d903210a695e865c8fae48
+    magnet link: magnet:?xt=urn:btih:UBGB4JZLQEMVYR722UC5VV5TCBNWLXL6
+
+
+cablegate-201012020901.7z.torrent:
+    file length: 1981543
+    file md5sum: e4bff38bba06e1f8e8fe94e45cee70da
+    file sha256: 9b74b9853aead7152c6078fb3d28794c1d39e61c045eaee64aaab0d991856965
+    magnet link: magnet:?xt=urn:btih:LNXUP7IQCGWL4HABCZGFYUMO6DUXETVY
+
+
+cablegate-201012021001.7z.torrent:
+    file length: 1981349
+    file md5sum: ab2d477ba8e955c8324b53eb0007c475
+    file sha256: a609fb1a39fb1f6cf10744405bd312d5a612f89ee664b42e46031103bddf3929
+    magnet link: magnet:?xt=urn:btih:UEOZ75WLZ4TRK6NPNNHCQ5UOP2FPHEUJ
+
+
+cablegate-201012021101.7z.torrent:
+    file length: 1981569
+    file md5sum: bb939fefb99c9b210716cf7c8bb031f9
+    file sha256: 51ddf393e65c0d9588f5cefca4b74b610c31d0c07b630fb0ed9472b2ce241910
+    magnet link: magnet:?xt=urn:btih:IZKHSTMFJKELPM5DVJ3326BHEN7L42UK
+
+
+cablegate-201012021201.7z.torrent:
+    file length: 1981459
+    file md5sum: c5774a5f2c698674fcdbb5bf179b300b
+    file sha256: 7ad0d9022b4585acfd3aaf30cff30edbca1dc689516a3223ba6d4768180c42d5
+    magnet link: magnet:?xt=urn:btih:AHCEUGOBFKGUM2ILFSLX6CALZCSKK3OO
+
+
+cablegate-201012021301.7z.torrent:
+    file length: 1981450
+    file md5sum: 4174b136ffa0e2cbd9feced5aa27e981
+    file sha256: e09d94573336d09411531e34b6415cdb1c13d9866845b2590ef63619917ded5c
+    magnet link: magnet:?xt=urn:btih:VV5FBA6KF2XR4L54S2IE25G7WTKILJON
+
+
+cablegate-201012021401.7z.torrent:
+    file length: 1985924
+    file md5sum: 61a6711e9d8c0c51b7d3f26573484543
+    file sha256: 570efb2c22de5a299f365ca4cf00483d6da93e89bbc2ef629f04d2c61437516f
+    magnet link: magnet:?xt=urn:btih:S5ONBU46OUMRLQ3ALHZXMY5TW77ICT7Q
+
+
+cablegate-201012021501.7z.torrent:
+    file length: 1989912
+    file md5sum: 3241764ca2abe80fc461d196a03e5a05
+    file sha256: 8764000c1763fbe765d278aa6b1d9e37aab78153c32f79abeaa42e8dcfe3e1a6
+    magnet link: magnet:?xt=urn:btih:LOVQUBOZCXR2VRKXA7VSHSXPUSYVTPRU
+
+
+cablegate-201012021601.7z.torrent:
+    file length: 1989904
+    file md5sum: cbdda9d8764233af2ef695c38d06b15e
+    file sha256: f3fc1e3fe9c2e793940f75868dd4c8290d130d4cccc8ab7e3312c501f0dd7fe0
+    magnet link: magnet:?xt=urn:btih:W5OVCWAKOU6ZPAGO46L3ZBJXZ6RCW6TX
+
+
+cablegate-201012021701.7z.torrent:
+    file length: 1989893
+    file md5sum: a6fcc8484f576cbf494676966d451268
+    file sha256: 872be373349303bbe67f7e2b34dcddfc60279975c53b0580f97c9a60cbee44de
+    magnet link: magnet:?xt=urn:btih:6UDM5VNTHCHN6WYLGAUCWD3J5GM3JVE5
+
+
+cablegate-201012021801.7z.torrent:
+    file length: 2010744
+    file md5sum: 72daf840341723e520a4515797c1b5b8
+    file sha256: ceec469e0901c75d4ecbac38e3af8ff1032f6092e09e235765cda8a144db4106
+    magnet link: magnet:?xt=urn:btih:IWCV7PSLQAK6BBWSYEPF4UGOLTFC5USC
+
+
+cablegate-201012021901.7z.torrent:
+    file length: 2014057
+    file md5sum: 03e35b01daae1d95020a5bfb0e02e30d
+    file sha256: 8dddd27efcb7df64431397b665210f3b8c7b6719d5f28a94bdcfdda9424424b2
+    magnet link: magnet:?xt=urn:btih:OIMX473DNXMUVQD76VOQ2VKWH53TQVSZ
+
+
+cablegate-201012021954.7z.torrent:
+    file length: 2022100
+    file md5sum: eb187e3b6a398b60620b0017b609d185
+    file sha256: bac4db55bcb4ec0de1754fab1b8968397e02da55dd41934ccb96b534e41262f1
+    magnet link: magnet:?xt=urn:btih:UK5H55AYYFUPOW7UKPMUPSGAEWNIJGWD
+
+
+cablegate-201012022001.7z.torrent:
+    file length: 2026138
+    file md5sum: 15e59d519224fffe979f7bccda16cc0a
+    file sha256: f0f59885044a8579811848bfb5e59c0d40c0016aa934060533bccb3a005cc847
+    magnet link: magnet:?xt=urn:btih:3QW5W4ZQDHGYUMV22KXXGFG2KUR6W2DM
+
+
+cablegate-201012022101.7z.torrent:
+    file length: 2025816
+    file md5sum: 555c394d67c399416ff27d308eb29d7f
+    file sha256: 96324be3af9a5c52f25f52ea9b43f5bbf3ae6957263d265784fe766d378c9c84
+    magnet link: magnet:?xt=urn:btih:4BRYJKY4TFGL3TYDX4DMR3ON72OIY4BB
+
+
+cablegate-201012022201.7z.torrent:
+    file length: 2030871
+    file md5sum: dfa9741122afca942c3804d095faf081
+    file sha256: aa205614f2bbdc03736943dea5831fb26563638e51ec558254452e5cae83422d
+    magnet link: magnet:?xt=urn:btih:VCHRAMUWGHY2DKROLYRYIQQHOHAAVRAO
+
+
+cablegate-201012022301.7z.torrent:
+    file length: 2031144
+    file md5sum: 32e4a643e7ec1176fc2a53d2ed7d931c
+    file sha256: bdc180b84f9c67021b41c779233b526c4f2cc7b436513f51557ff7236ba0e41b
+    magnet link: magnet:?xt=urn:btih:VQV3NFMK436OG6XSEWR4BBN6W4SMGZJL
+
+
+cablegate-201012030001.7z.torrent:
+    file length: 2031209
+    file md5sum: 99794821e5e79b561460fb5c7ac6dbd5
+    file sha256: e266079acb8d5553ba2d982bb165a2cc726f78c0e5fb8b5cf91bc77deb6fc769
+    magnet link: magnet:?xt=urn:btih:IWNUBXQNYXN6Q3LWTSZBINC6BKCEONVC
+
+
+cablegate-201012030101.7z.torrent:
+    file length: 2032639
+    file md5sum: 876435c5c49ae2ed0bdca97d6d4db7a5
+    file sha256: 680035e055388cdadb0b71660074e68bcf7b33e50a03578d3e9259a5a5d208fd
+    magnet link: magnet:?xt=urn:btih:VUOIZEDS37W3BCMVG222NRGZ3XYXACNP
+
+
+cablegate-201012030201.7z.torrent:
+    file length: 2058319
+    file md5sum: 7d4faf56f448985e7f66c6aab2698538
+    file sha256: a4924f2f764dc7dcada25c51187e0b962c2999acd18c532557b60b08cd7565b4
+    magnet link: magnet:?xt=urn:btih:IXCR27KA7DHLVZPZZTP64VNM3ZTXIHOI
+
+
+cablegate-201012030301.7z.torrent:
+    file length: 2056549
+    file md5sum: cc5071572f2987142f60cc347347077c
+    file sha256: 1538ef3a58590ffc582f2df48e8ee7fc30127f4f8d3a07b60ee1888397012746
+    magnet link: magnet:?xt=urn:btih:LZAWK5JIHA5XJJX624W35XMI43MNWCI3
+
+
+cablegate-201012030401.7z.torrent:
+    file length: 2073233
+    file md5sum: 2553fd32ea2e45e1b0efc710aadf0b82
+    file sha256: 4766a36aafe580cdfa1f5c33e1360478304e527dc3aa283836adf1a0061e7736
+    magnet link: magnet:?xt=urn:btih:M4NY6MAIKTCEWGWTLNAVRX4SWWDWMDUP
+
+
+cablegate-201012030501.7z.torrent:
+    file length: 2084217
+    file md5sum: a4ba1a7681adc97149ba407cf61fdbd5
+    file sha256: 08da84ac04ae95a726e9b71f7b6599d80231bef029dcaf2abecd23c3e18db2ab
+    magnet link: magnet:?xt=urn:btih:ULNKJLYBHRKDVRKZ74ZAKLDDW7YF3MT2
+
+
+cablegate-201012030601.7z.torrent:
+    file length: 2084311
+    file md5sum: 6eae9a7d972376e95f7da22e88af900a
+    file sha256: 8176a1ba9810220db02106f379b7a57e831bbdefb30c456744bed40c7e70b2a4
+    magnet link: magnet:?xt=urn:btih:QPI2Z2AL5TH777ZKJE5GSMEKAL7GUIGQ
+
+
+cablegate-201012030701.7z.torrent:
+    file length: 2084222
+    file md5sum: ed77f357b432d7a2bbfc1025dd415dbc
+    file sha256: be8cbf516af33a5a49413d171024ab72bb920696c6bfe9339484d29f27cf6b43
+    magnet link: magnet:?xt=urn:btih:YMXSDOP5U756TIWLY53224NBQEVPADMH
+
+
+cablegate-201012030801.7z.torrent:
+    file length: 2108947
+    file md5sum: 08450ced7eaca5239e436cdb03bc4871
+    file sha256: 2238eb20b3805f7b698ea548ff902c751194b15c227b88a3cd639224d3231d71
+    magnet link: magnet:?xt=urn:btih:MWQ7W6PCK7MRCKHQ7UHY55Y3Q3KAKW6Q
+
+
+cablegate-201012030901.7z.torrent:
+    file length: 2178116
+    file md5sum: bc03b35d655082ccfb2166720bc9e32d
+    file sha256: 0511803c7db1486e46198c34a66635c4ca80bdc445011a8999af14cf8571404f
+    magnet link: magnet:?xt=urn:btih:FTH2W7EI4IAK2CWE3XOG6JEMI55KGKFG
+
+
+cablegate-201012030903.7z.torrent:
+    file length: 2178273
+    file md5sum: f9c1a817d2daa09444db3ee54aeee295
+    file sha256: 687ab0895ee8ea3ebe99c74a7e6dc6f0af470efe5d5ac23575283bdfd8ae1625
+    magnet link: magnet:?xt=urn:btih:NP2R5NQ23XWVDFBR4KJE27ICHPXKQ4PG
+
+
+cablegate-201012030954.7z.torrent:
+    file length: 2178788
+    file md5sum: 5887ec884c1bc33daa63db320e3a6c0b
+    file sha256: 626cc488352be307b026f5c48ad86c0526dd9c359e1c9dec827ab137d92faaf8
+    magnet link: magnet:?xt=urn:btih:IGS4OPE57CVDKW3XTX5SYHRBTLRKQJ33
+
+
+cablegate-201012031001.7z.torrent:
+    file length: 2178788
+    file md5sum: 5887ec884c1bc33daa63db320e3a6c0b
+    file sha256: 626cc488352be307b026f5c48ad86c0526dd9c359e1c9dec827ab137d92faaf8
+    magnet link: magnet:?xt=urn:btih:E27FTRHKAGZO4P53WGXLUWZNJIWW5YU5
+
+
+cablegate-201012031101.7z.torrent:
+    file length: 2165550
+    file md5sum: 4fa5e936f7593785b26f897e3d8fd15d
+    file sha256: 5ab8bffa563a430c93bf8ed7bf779bba7989ec4ed111f155d532cd73314b7df6
+    magnet link: magnet:?xt=urn:btih:VNBM5UPHW3KD6ZQHS4CUBZN3QLDFGOII
+
+
+cablegate-201012031201.7z.torrent:
+    file length: 2141252
+    file md5sum: 3c6370de67954ffb761f330ff23596fd
+    file sha256: 63630c550246ec541012f3f35955737c8b63091e1d3c01c7911a90ed9e741cd6
+    magnet link: magnet:?xt=urn:btih:EPA7WJUVOFY6RAQHCGGSNRMY2TOO6ZLA
+
+
+cablegate-201012031251.7z.torrent:
+    file length: 2217867
+    file md5sum: aa007d78bfa9940b8ab087a0803d874b
+    file sha256: aad9b6ff4811f9a9c66a7e9bfafc1e27a9028d6ac2c03779b1b7a64a57dca4e0
+    magnet link: magnet:?xt=urn:btih:7LD3KAEBXD6XWBRM656CMUY33L4S4B26
+
+
+cablegate-201012031301.7z.torrent:
+    file length: 2217950
+    file md5sum: 1182487ef4597bee3236610b2ded2fb6
+    file sha256: d001948e387eb2c825b46d0b895b22d2ff657a190ab23b8498016a2bb8044809
+    magnet link: magnet:?xt=urn:btih:L74KEC7EU3HVUBNIZBZAIDE64FYNFXOM
+
+
+cablegate-201012031401.7z.torrent:
+    file length: 2219835
+    file md5sum: 5b9d14f476a02ebcf6d7b5ef096a7d66
+    file sha256: 750f9d911a83550b41cebea602c59b636a95ddea66d5e7b4b9e83d4b9f221c84
+    magnet link: magnet:?xt=urn:btih:4Z53ANV6H4GUEHYZQGUWOWYYEHUVN4W3
+
+
+cablegate-201012031501.7z.torrent:
+    file length: 2218234
+    file md5sum: 7063b92c0af8d4c3a65dda8eab0c025c
+    file sha256: f824fd72ff28f10cc624000898257573d18169b0a0dcba888dc463619094040d
+    magnet link: magnet:?xt=urn:btih:SUVT64E7DNT5CGMKR4TFIRLGWOOA4YFU
+
+
+cablegate-201012041247.7z.torrent:
+    file length: 2624268
+    file md5sum: bdb52aa9f2d76b0a62d332907299a4ca
+    file sha256: f01366a1baa2d7fd3eecf23e5fbfd65a8a79c5d89c892e1d4f8774c76e0873c8
+    magnet link: magnet:?xt=urn:btih:LZDYYWUZOJ6U7UFUPV7FHH7MGMSBQXSI
+
+
+cablegate-201012041409.7z.torrent:
+    file length: 2624281
+    file md5sum: 43346237990f447ba412692c74869cf1
+    file sha256: fafee3eb12c1376f2980856f210b0fffb9c39d8e4d30551c15a3e46172c7ba13
+    magnet link: magnet:?xt=urn:btih:VFDGADD5EMNNRYBAMAB3WSPNHU5FFBVT
+
+
+cablegate-201012041811.7z.torrent:
+    file length: 2581082
+    file md5sum: 37115a9416c35641962c1a8d1f871fd8
+    file sha256: 0c72e793070d02fb241ac4a528d3c71c1326991fea5043aef09011406df56238
+    magnet link: magnet:?xt=urn:btih:US2LOJPTOJ542FG4RGROX7DFPFQHVBYP
+
+
+cablegate-201012051016.7z.torrent:
+    file length: 2633904
+    file md5sum: bf5823c80c6810399c2f449a3e805892
+    file sha256: 9d776455618d7fab15a1f9aad823888c4e98e4d6417272db7a31d1a19be961aa
+    magnet link: magnet:?xt=urn:btih:OHK47RP3LDJR4X4VGSKRR7QD5BE2GHDZ
+
+
+cablegate-201012051945.7z.torrent:
+    file length: 2905655
+    file md5sum: c119078a85926f038079d67c51330b0b
+    file sha256: 33eb66753b1d2f901af01b734738e1b289a5d9574b82f9b196833c3cfbdb4c09
+    magnet link: magnet:?xt=urn:btih:Q6ASCVALGGKZODJXDB3PCL6AVJ7JBNH4
+
+
+cablegate-201012060010.7z.torrent:
+    file length: 2929448
+    file md5sum: c6d417fdc3b722f62ecb02c9a4d7db77
+    file sha256: f82c88d7dc04934d3c32e5d22648b09d146f57c804b774182b0920808b5a6183
+    magnet link: magnet:?xt=urn:btih:6KLCFAS5L5OC4RNSSTSAUULGFHSYCSSD
+
+
+cablegate-201012060113.7z.torrent:
+    file length: 2929353
+    file md5sum: afbfa2c5fbc7ed3721cbaccd153dca93
+    file sha256: f2cf16927a50f10aded790ceb072c181ec9da8acb57cd59442cdea0b966f1154
+    magnet link: magnet:?xt=urn:btih:F7RXAEAORDKSU34M7XIAIUB3DD5LHDGA
+
+
+cablegate-201012060138.7z.torrent:
+    file length: 2929637
+    file md5sum: 7b75dfbe2b06c4f945a95743bf40f734
+    file sha256: ea7288e6888173c052f2e456af4ccd532151880fdeb031165e2adb6ce6dd1e91
+    magnet link: magnet:?xt=urn:btih:UHXBS7R6EESBAMYDCCVAFWUGLOAMS54R
+
+
+cablegate-201012061159.7z.torrent:
+    file length: 2917202
+    file md5sum: 97695c07e94f20b50b874600700a1848
+    file sha256: d71e1896f30f61429b77ab06859438fd0af36c9598606f6e1ea4de35da505b6d
+    magnet link: magnet:?xt=urn:btih:AAVU64LKNNP6LSV7RU7TEWWIU6BKCSKG
+
+
+cablegate-201012061210.7z.torrent:
+    file length: 2917048
+    file md5sum: 2acbe15d44bc1b55f9b1abc838721126
+    file sha256: 6440995e0e5846815254bb6325ae1e8b58c95f82a1ce78f0450c2b33862df95d
+    magnet link: magnet:?xt=urn:btih:7NOYTGX7VRF36BBTMOBAXMNZPKHIN4ZI
+
+
+cablegate-201012061400.7z.torrent:
+    file length: 2917212
+    file md5sum: 9a209671a5e33eef22122614713ac0f9
+    file sha256: 90132661afea640940a9cdaab193ec4311fff8e09014dac1ca67eff3ca42e29e
+    magnet link: magnet:?xt=urn:btih:HG4FS4HLAUFO7J2VSMIRKRGGRLK3HOQH
+
+
+cablegate-201012061424.7z.torrent:
+    file length: 2917073
+    file md5sum: 03a60e878ae1d76525d3d0fe08c4bea0
+    file sha256: 0e150f5eaff3cfff52b56e5e68cf363acefb78f1d96291480c307f4911cc846c
+    magnet link: magnet:?xt=urn:btih:FJG4FVT7YD2RYBA5HTFDBXGOTU6QVDEE
+
+
+cablegate-201012061721.7z.torrent:
+    file length: 2885513
+    file md5sum: 6df9ed5b73620af7e31c7fd018f947c1
+    file sha256: 355d5327bef11fa62bf077511be6eb6a7a63f8e77c437a6fedf0827d5b92926e
+    magnet link: magnet:?xt=urn:btih:GJAFN4SETRZDFNYQLW7JRPRBSWRNLOBS
+
+
+cablegate-201012070806.7z.torrent:
+    file length: 3038057
+    file md5sum: 29e199b9018021664b45fbc4a956c095
+    file sha256: 51684fc6263cc979ed9701e19687ad6bce2b973a93df19d8110faf3aeb986f1b
+    magnet link: magnet:?xt=urn:btih:WJHQEDPQNWXBQGXPQ5AZBMLQRE2WTJET
+
+
+cablegate-201012072002.7z.torrent:
+    file length: 3197872
+    file md5sum: 917f45a619b4c8d60e6ac0546632fbe1
+    file sha256: d7ea6ff97d9c54934e37341ad46a4a01f2047638ec8679c790f863635be3588b
+    magnet link: magnet:?xt=urn:btih:G3FF7B2V4STXFIHGBOUPECUCVQ4S45DI
+
+
+cablegate-201012072130.7z.torrent:
+    file length: 3276167
+    file md5sum: 4c86ad70c81bcb8f3f26aaa047dbad20
+    file sha256: 7c889c1fc5cc8ea381f3f2bd35d8e9d86783d34de495a0165dab9e2e117a6a02
+    magnet link: magnet:?xt=urn:btih:BZSYFQW6WV5S6QVLCVEOXAXYJOPWFTTA
+
+
+cablegate-201012072146.7z.torrent:
+    file length: 3290637
+    file md5sum: f2c41a3625406dd967a0a4a70f3086d9
+    file sha256: a29de794ed182f36ff67321e729019663bddf2fac689133549ebba205f48a674
+    magnet link: magnet:?xt=urn:btih:3NWFCSXRETK5Q2CHEAWLPXTHMQ2OHQRZ
+
+
+cablegate-201012081414.7z.torrent:
+    file length: 3386866
+    file md5sum: 1a3ef50e334c50a5e563b0ca2c67162a
+    file sha256: b5bdb592c9a7e65f3bef2b829c0319f498b8c7ab8b000b4c2cfd6eac0d8886ec
+    magnet link: magnet:?xt=urn:btih:L6EWJST4LJA4HXSB7STWDBNAQE4Q5IVN
+
