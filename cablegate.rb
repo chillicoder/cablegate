@@ -135,6 +135,11 @@ class Cablegate < Sinatra::Base
     return {:error => "Invalid Mirror Data"}.to_json if mirror['name'] == nil || mirror['uri'] == nil || mirror['build_number'] == nil
     @@log.debug("Incoming Mirror data was acceptable.")
 
+    # if incoming mirror uri contains 'localhost' then ignore it.
+    # todo: test the incoming URI to ensure it's ok.
+    return {:error => "Incoming mirror #{mirror['uri']} is unreachable."} if mirror['uri'].contains?('localhost')
+    @@log.debug("Incoming Mirror data was reachable (ie was not localhost).")
+
     my_uri = "http://#{request.host_with_port}"
     @me = know_thyself!(my_uri, options.build_number)
     return {:error => 'Announced to Self'} if mirror['uri'] == my_uri

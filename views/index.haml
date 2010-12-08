@@ -30,4 +30,4 @@
           %td<
             %a{:href => m.uri} #{m.uri}
           %td #{m.build_number}
-          %td #{m.lease_expires ? m.lease_expires : 'never' }
+          %td #{m.lease_expires ? m.lease_expires.strftime("%Y-%m-%dT%H:%M:%SZ") : 'never' }
