@@ -18,7 +18,7 @@ class Cablegate < Sinatra::Base
   enable  :sessions
   set :root, File.dirname(__FILE__)
   set :models, Proc.new { root && File.join(root, 'models') }
-  set :build_number, '201012072146'
+  set :build_number, '201012081414'
   
   register Sinatra::R18n
   register Sinatra::Flash
@@ -123,6 +123,13 @@ class Cablegate < Sinatra::Base
     @me = know_thyself!(my_uri, options.build_number)
     announce!
     haml :index
+  end
+
+  get '/mirrors' do
+    content_type :json
+    @mirrors = Mirror.active_mirrors
+    return {:error => "No Active Mirrors Known"} if @mirrors == nil
+    return @mirrors.to_json
   end
 
   post '/announcement' do
