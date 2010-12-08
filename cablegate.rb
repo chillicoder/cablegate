@@ -18,7 +18,7 @@ class Cablegate < Sinatra::Base
   enable  :sessions
   set :root, File.dirname(__FILE__)
   set :models, Proc.new { root && File.join(root, 'models') }
-  set :build_number, '201012070806'
+  set :build_number, '201012072146'
   
   register Sinatra::R18n
   register Sinatra::Flash
