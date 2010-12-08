@@ -39,14 +39,17 @@ module Sinatra
             puts "No need to announce to myself"
           else
             # announce self to m
-            puts "announcing to #{m.name} at #{m.uri}"
+            puts "Posting announcing to #{m.uri}/announcement"
             path = "/announcement"
             req = Net::HTTP::Post.new(path, initheader = {'Content-Type' =>'application/json'})
-            req.body = { :name => @me.name, :uri => @me.uri, :build_number => @me.build_number}.to_json
+            # note @me.name is 'self' which is not useful for sending to other mirrors.  In this case just use the uri as the name.
+            req.body = { :name => @me.uri, :uri => @me.uri, :build_number => @me.build_number}.to_json
             response = Net::HTTP.new(m.uri).start {|http| http.request(req) }
-        
+
             # debugging
             puts "Response #{response.code} #{response.message}: #{response.body}"
+            
+            # assuming the result is json like {:lease_time} just parse it and remember to get back to the 
           end
         end
       end

@@ -9,10 +9,12 @@
     %a{ :href => '/index.html'} start here.
   - if @me != nil
     %p<
-      This Mirror is running at #{@me.uri} Built from release #{@me.build_number}.
+      This Mirror is running at #{@me.uri} built from release #{@me.build_number}.
   -else
     %p<
-      This Mirror is running at #{request.host_with_port} but is not yet in the Mirrors Database.
+      This Mirror is running at #{request.host_with_port}
+  %p<
+    %a{:href => '/announce' } Announce it to other mirrors.
 #mirrors
   - if @mirrors.empty?
     %p{:class => 'error'} There are NO mirrors loaded.
@@ -20,13 +22,11 @@
     %h2 Known Smart Mirrors.
     %table
       %tr<
-        %th Name
         %th URI
         %th Build
         %th Expires
       - for m in @mirrors do
         %tr<
-          %td #{m.name}
           %td<
             %a{:href => m.uri} #{m.uri}
           %td #{m.build_number}
