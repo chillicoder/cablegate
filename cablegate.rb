@@ -18,7 +18,7 @@ class Cablegate < Sinatra::Base
   enable  :sessions
   set :root, File.dirname(__FILE__)
   set :models, Proc.new { root && File.join(root, 'models') }
-  set :build_number, '201012081414'
+  set :build_number, '201012081854'
   
   register Sinatra::R18n
   register Sinatra::Flash
@@ -162,7 +162,7 @@ class Cablegate < Sinatra::Base
       new_mirror.build_number = mirror['build_number'] unless new_mirror.build_number == mirror['build_number']
     end
     # update the lease time
-    new_mirror.lease_expires = Time.now.advance(:seconds => 3600)
+    new_mirror.lease_expires = Time.now.advance(:seconds => 3600) unless new_mirror.name == 'default'
     new_mirror.save!
 
     @@log.debug("Incoming Mirror #{new_mirror.uri} of build #{new_mirror.build_number} expires at #{new_mirror.lease_expires}")

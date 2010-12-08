@@ -774,3 +774,10 @@ cablegate-201012081414.7z.torrent:
     file sha256: b5bdb592c9a7e65f3bef2b829c0319f498b8c7ab8b000b4c2cfd6eac0d8886ec
     magnet link: magnet:?xt=urn:btih:L6EWJST4LJA4HXSB7STWDBNAQE4Q5IVN
 
+
+cablegate-201012081854.7z.torrent:
+    file length: 3432663
+    file md5sum: 68b39e93a26505073d2a470d01735b95
+    file sha256: e07a39dc226dc47ac056d20b64bec53ac37cdb93417fc6c68b66132a1899507f
+    magnet link: magnet:?xt=urn:btih:WGOC2JJQHLRHO673WEJOTRF553FLM6XQ
+
