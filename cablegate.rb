@@ -137,7 +137,7 @@ class Cablegate < Sinatra::Base
 
     # if incoming mirror uri contains 'localhost' then ignore it.
     # todo: test the incoming URI to ensure it's ok.
-    return {:error => "Incoming mirror #{mirror['uri']} is unreachable."} if mirror['uri'].include?('localhost')
+    return {:error => "Incoming Mirror #{mirror['uri']} is unreachable."} if mirror['uri'].include?('localhost')
     @@log.debug("Incoming Mirror data was reachable (ie was not localhost).")
 
     my_uri = "http://#{request.host_with_port}"
