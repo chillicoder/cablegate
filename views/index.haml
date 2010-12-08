@@ -1,20 +1,16 @@
 #details
   %h3 A 'Cablegate' Smart Mirror
   %p<
-    Wikileaks was taken down by in a blatant attack on free speech.
+    Wikileaks was taken down by in a blatant attack on free speech. This got me thinking about how one would design a simple web system that people could easily download a copy of for themselves and run it and it would announce itself to the other mirrors as they emerged.  This sort of thing is generically useful, but the wikileaks attacks gave the idea more impetus.
+  %h3 What is this.
   %p<
-    This is a simple app that mirrors an archive of the 'cablegate' files in its public directory and which can easily be deployed to Heroku.
+    Cablegate is a simple Sinatra web application that mirrors an archive of the original
+    %a{:href=>'http://wikileaks.info/cablegate.html'}cablegate
+    files in its public directory and which can easily be deployed to a Ruby aware cloud computing stack such as
+    %a{:href=>'http://www.heroku.com'} Heroku.
   %p<
-    There is more to come but in the meantime 
-    %a{ :href => '/index.html'} start here.
-  - if @me != nil
-    %p<
-      This Mirror is running at #{@me.uri} built from release #{@me.build_number}.
-  -else
-    %p<
-      This Mirror is running at #{request.host_with_port}
-  %p<
-    %a{:href => '/announce' } Announce it to other mirrors.
+    View the static 
+    %a{ :href => '/index.html'}local mirror of the Cablegate archives
 #mirrors
   - if @mirrors.empty?
     %p{:class => 'error'} There are NO mirrors loaded.
@@ -22,12 +18,12 @@
     %h2 Known Smart Mirrors.
     %table
       %tr<
-        %th URI
-        %th Build
-        %th Expires
+        %th> URI
+        %th> Build
+        %th> Expires
       - for m in @mirrors do
-        %tr<
+        %tr
           %td<
             %a{:href => m.uri} #{m.uri}
-          %td #{m.build_number}
-          %td #{m.lease_expires ? m.lease_expires.strftime("%Y-%m-%dT%H:%M:%SZ") : 'never' }
+          %td> #{m.build_number}
+          %td> #{m.lease_expires ? m.lease_expires.strftime("%Y-%m-%dT%H:%M:%SZ") : 'never' }

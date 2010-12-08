@@ -109,7 +109,7 @@ class Cablegate < Sinatra::Base
 ######################   ROUTES   #################################
 
   get '/' do
-    flash.now[:message] = "This is a simple Cablegate mirror"
+    flash.now[:message] = "Cablegate Mirror — Build #{options.build_number}"
     @mirrors = Mirror.active_mirrors
     my_uri = "http://#{request.host_with_port}"
     @me = know_thyself!(my_uri, options.build_number)
@@ -117,7 +117,7 @@ class Cablegate < Sinatra::Base
   end
 
   get '/announce' do
-    flash.now[:message] = "Announcing Self to Mirrors"
+    flash.now[:tip] = "Announced Self to Mirrors"
     @mirrors = Mirror.active_mirrors
     my_uri = "http://#{request.host_with_port}"
     @me = know_thyself!(my_uri, options.build_number)

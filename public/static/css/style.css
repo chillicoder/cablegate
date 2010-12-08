@@ -1,0 +1,181 @@
+#header {
+	background: #8dcad9;
+	height: 24px;
+	width: 95%;
+	padding-top: 2px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 60em;
+	min-width: 51.45em;
+}
+
+#header p{
+	margin:0px;
+}
+
+#flash {
+	clear: both;
+	margin-top: 5px;
+	background: #000000;
+	color: #ffffff;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 60em;
+	min-width: 51.45em;
+}
+
+.message {
+	background: #000000;
+	color: #ffffff;
+}
+
+.warning {
+	background: #FFA500;
+	color: #000000;
+}
+
+.error {
+	background: #FF0000;
+	color: #000000;
+	font-size: 1.1em;
+}
+
+.tip {
+	background:#008000;
+	color: #000000;
+}
+
+#content {
+	background: #F8F8FF;
+	min-height: 600px;
+	clear: right;
+	padding-top: 5px;
+	width: 90%;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 60em;
+	min-width: 51.45em;
+}
+
+#details {
+	background: #DCDCDC;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#details table {
+	font-size:.75em;
+}
+
+#details .gps {
+	font-size:.5em;
+	font-family: monospace;
+}
+
+#mirrors {
+	background: #DCDCDC;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#mirrors table {
+	font-size:.75em;
+	border-width: thin;
+	border-style: solid;
+	border-color: #000000;
+	border-collapse: separate;
+}
+
+#mirrors table th {
+	border-width: 1px;
+	padding: 2px;
+	border-style: none;
+	border-color: #000000;
+	background-color: #F8F8FF;
+}
+
+#mirrors table td {
+	border-width: 1px;
+	padding: 2px;
+	border-style: none;
+	border-color: #000000;
+	background-color: #ffffff;
+}
+
+#user_buttons {
+	background: #DCDCDC;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#edit_button {
+	background: #DCDCDC;
+	float: left;
+}
+
+#self_destruct {
+	background: #FF0000;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#footer {
+	background: #8dcad9;
+	font-size: .7em;
+	clear: both;
+	height: 30px;
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 85.71em;
+	min-width: 73.5em;
+	text-align: left;
+	white-space:nowrap;
+}
+
+#footer a{
+  color:#0084bd;
+  text-decoration:none;
+	outline:none;
+}
+
+#footer a:visited{
+  color:#0084bd;
+}
+
+#footer a:hover{
+  color:#DCDCDC;
+	background:#2F4F4F;
+  text-decoration:underline;
+}
+
+.required {
+	border: 1px solid #008000;
+}
+
+.data_missing {
+	color:#FF0000;
+}
+
+.data_complete {
+	color:#008000;
+}
+
+ul.horizontal_list {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+ul.horizontal_list li {
+	display: inline;
+	padding: .2em 1em;
+	background-color: #F8F8FF;
+	font-size: .35em;
+}

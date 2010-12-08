@@ -3,6 +3,8 @@
   %head
     %meta{ :'http-equiv' => "Content-Type", :content => "text/html; charset=UTF-8"}
     %link{ :href => "/static/css/cables.css", :rel => "stylesheet", :type => "text/css" }
+    %link{ :href => "/static/css/reset-fonts-grids.css", :rel => "stylesheet", :type => "text/css" }
+    %link{ :href => "/static/css/style.css", :rel => "stylesheet", :type => "text/css" }
     %title #{flash[:message]}#{flash[:warning]}#{flash[:error]}#{flash[:tip]}
   %body
     #header
@@ -14,3 +16,17 @@
       = yield
     #footer
       / template footer content goes here
+      %p<
+        See the latest news by following the
+        %a{:href => 'http://twitter.com/search/%23wikileaks'} wikileaks
+        tag in Twitter. Fork
+        %a{:href=>'https://github.com/davesag/cablegate'}the sourcecode
+        if you wish.
+      - if @me != nil
+        %p<
+          This Mirror is running at #{@me.uri} built from release #{@me.build_number}.
+      -else
+        %p<
+          This Mirror is running at #{request.host_with_port}
+      %p<
+        %a{:href => '/announce' }Announce it to other mirrors.
