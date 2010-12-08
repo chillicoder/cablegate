@@ -132,7 +132,7 @@ class Cablegate < Sinatra::Base
     request.body.rewind # not sure why I have to do this.
     # incoming will be { :name, :uri, :build_number }
     mirror = JSON.parse request.body.read
-    return {:error => "Invalid Mirror Data"}.to_json if mirror['name'] == nil || mirror['uri'] == nil || mirror['build_number'] == nill
+    return {:error => "Invalid Mirror Data"}.to_json if mirror['name'] == nil || mirror['uri'] == nil || mirror['build_number'] == nil
     @@log.debug("Incoming Mirror data was acceptable.")
 
     my_uri = "http://#{request.host_with_port}"
