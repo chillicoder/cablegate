@@ -57,7 +57,7 @@ module Sinatra
               puts "Response #{response.code} #{response.message}: #{response.body}"
             else
               # assuming the result is json like {:lease_time} just parse it and remember to get back to the mirror later
-              r = JSON.parse response.body.read
+              r = JSON.parse response.body
               bn = r['build_number']
               if bn !=  nil
                 if bn == m.build_number
