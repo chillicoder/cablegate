@@ -118,10 +118,10 @@ class Cablegate < Sinatra::Base
 
   get '/announce' do
     flash.now[:tip] = "Announced Self to Mirrors"
-    @mirrors = Mirror.active_mirrors
     my_uri = "http://#{request.host_with_port}"
     @me = know_thyself!(my_uri, options.build_number)
     announce!
+    @mirrors = Mirror.active_mirrors
     haml :index
   end
 
