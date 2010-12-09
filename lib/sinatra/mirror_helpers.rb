@@ -41,7 +41,7 @@ module Sinatra
         mirrors = Mirror.all
         mirrors.each do |m|
           if m.uri == @me.uri
-            puts "No need to announce to myself"
+            puts "Skipping #{m.uri} as there is no need to announce to myself"
           else
             # announce self to m
             puts "Posting announcement to #{m.uri}/announcement"
@@ -53,7 +53,7 @@ module Sinatra
             response = Net::HTTP.new(uri.host, uri.port).start {|http| http.request(req) }
 
             # debugging
-            if response.code != 200
+            if response.code != '200'
               puts "Response #{response.code} #{response.message}: #{response.body}"
             else
               # assuming the result is json like {:lease_time} just parse it and remember to get back to the mirror later
