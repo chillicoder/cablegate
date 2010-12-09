@@ -54,7 +54,10 @@ module Sinatra
 
             # debugging
             if response.code != '200'
-              puts "Response #{response.code} #{response.message}: #{response.body}"
+              puts "Got Bad Response Code #{response.code} #{response.message}: #{response.body}"
+              # remove the mirror from our list
+              puts "Removing #{m.uri} from the Mirrors list."
+              m.destroy
             else
               # assuming the result is json like {:lease_time} just parse it and remember to get back to the mirror later
               r = JSON.parse response.body
@@ -69,7 +72,7 @@ module Sinatra
                 m.lease_expires = Time.now.advance(:seconds => 3600)
                 m.save!
               else
-                puts "#{m.uri} responded with an error: #{r['error']}"
+                puts "#{m.uri} responded with a non fatal error: #{r['error']}"
               end
             end
           end
