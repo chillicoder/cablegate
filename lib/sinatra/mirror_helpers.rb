@@ -24,6 +24,11 @@ module Sinatra
         @me = Mirror.create(:name => 'self', :uri => uri, :build_number => build_number)
         @me.lease_expires = Time.now.advance(:seconds => 3600)
         @me.save!
+      else  # avoids the need to run rake db:seed each time
+        if @me.build_number != build_number
+          @me.build_number = build_number
+          @me.save!
+        end
       end
       return @me
     end
@@ -32,8 +37,8 @@ module Sinatra
       if @me == nil
         puts "I know not myself, and thus can't announce yet. Awaiting an incoming request to tell me where I am."
       else
-        puts "Announcing myself to active mirrors."
-        mirrors = Mirror.active_mirrors
+        puts "Announcing myself to all mirrors."
+        mirrors = Mirror.all
         mirrors.each do |m|
           if m.uri == @me.uri
             puts "No need to announce to myself"
@@ -48,9 +53,25 @@ module Sinatra
             response = Net::HTTP.new(uri.host, uri.port).start {|http| http.request(req) }
 
             # debugging
-            puts "Response #{response.code} #{response.message}: #{response.body}"
-            
-            # assuming the result is json like {:lease_time} just parse it and remember to get back to the mirror later
+            if response.code != 200
+              puts "Response #{response.code} #{response.message}: #{response.body}"
+            else
+              # assuming the result is json like {:lease_time} just parse it and remember to get back to the mirror later
+              r = JSON.parse response.body.read
+              bn = r['build_number']
+              if bn !=  nil
+                if bn == m.build_number
+                  puts "#{m.uri} responded okay and the build numbers match"
+                else
+                  puts "#{m.uri} responded okay but with a different build number, #{bn}"
+                  m.build_number = bn
+                end
+                m.lease_expires = Time.now.advance(:seconds => 3600)
+                m.save!
+              else
+                puts "#{m.uri} responded with an error: #{r['error']}"
+              end
+            end
           end
         end
       end

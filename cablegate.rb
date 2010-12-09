@@ -18,7 +18,7 @@ class Cablegate < Sinatra::Base
   enable  :sessions
   set :root, File.dirname(__FILE__)
   set :models, Proc.new { root && File.join(root, 'models') }
-  set :build_number, '201012081854'
+  set :build_number, '201012082231'
   
   register Sinatra::R18n
   register Sinatra::Flash
@@ -128,7 +128,7 @@ class Cablegate < Sinatra::Base
   get '/mirrors' do
     content_type :json
     @mirrors = Mirror.active_mirrors
-    return {:error => "No Active Mirrors Known"} if @mirrors == nil
+    return {:error => "No Active Mirrors Known"}.to_json if @mirrors == nil
     return @mirrors.to_json
   end
 
@@ -144,12 +144,12 @@ class Cablegate < Sinatra::Base
 
     # if incoming mirror uri contains 'localhost' then ignore it.
     # todo: test the incoming URI to ensure it's ok.
-    return {:error => "Incoming Mirror #{mirror['uri']} is unreachable."} if mirror['uri'].include?('localhost')
+    return {:error => "Incoming Mirror #{mirror['uri']} is unreachable."}.to_json if mirror['uri'].include?('localhost')
     @@log.debug("Incoming Mirror data was reachable (ie was not localhost).")
 
     my_uri = "http://#{request.host_with_port}"
     @me = know_thyself!(my_uri, options.build_number)
-    return {:error => 'Announced to Self'} if mirror['uri'] == my_uri
+    return {:error => 'Announced to Self'}.to_json if mirror['uri'] == my_uri
     @@log.debug("Not trying to announce to self.")
 
     # maybe we have already seen this mirror, in which case update the build number if it's changed, and update the lease time
@@ -167,7 +167,7 @@ class Cablegate < Sinatra::Base
 
     @@log.debug("Incoming Mirror #{new_mirror.uri} of build #{new_mirror.build_number} expires at #{new_mirror.lease_expires}")
 
-    return {:lease_time => 3600 }.to_json
+    return {:build_number => @me.build_number}.to_json
   end
 
 end
