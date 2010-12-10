@@ -19,7 +19,7 @@ class Cablegate < Sinatra::Base
   set :root, File.dirname(__FILE__)
   set :models, Proc.new { root && File.join(root, 'models') }
   set :build_number, '201012100837'
-  
+
   register Sinatra::R18n
   register Sinatra::Flash
 
@@ -27,7 +27,7 @@ class Cablegate < Sinatra::Base
 
   class << self
     def load_models!
-      if !@models_loaded
+      if !@models_are_loaded
         raise "No models folder found!" unless File.directory? models
         Dir.glob("models/**.rb") { |m| require m }
         @@log.debug("Models loaded")
@@ -155,7 +155,7 @@ class Cablegate < Sinatra::Base
       new_mirror.build_number = mirror['build_number'] unless new_mirror.build_number == mirror['build_number']
     end
     # update the lease time
-    new_mirror.lease_expires = (Time.now + 3600).utc unless new_mirror.name == 'default' || new_mirror.name == 'self'
+    new_mirror.lease_expires = (Time.now + 3600).utc unless new_mirror.name == 'default'
     new_mirror.save!
 
     @@log.debug("Incoming Mirror #{new_mirror.uri} of build #{new_mirror.build_number} expires at #{new_mirror.lease_expires}")

@@ -22,7 +22,7 @@ module Sinatra
       @me = Mirror.find_by_uri(uri) if @me == nil
       if @me == nil
         @me = Mirror.create(:name => 'self', :uri => uri, :build_number => build_number)
-        @me.lease_expires = (Time.now + 3600).utc
+        @me.lease_expires = nil # own lease never expires.
         @me.save!
       else  # avoids the need to run rake db:seed each time
         if @me.build_number != build_number
@@ -42,6 +42,7 @@ module Sinatra
     end
 
     # when did we last do an announce?
+    # todo: for some reason  @last_announce_time is always nil
     def too_soon?
       if @me == nil
         puts "Who am I?"
