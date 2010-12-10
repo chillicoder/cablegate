@@ -18,7 +18,7 @@ class Cablegate < Sinatra::Base
   enable  :sessions
   set :root, File.dirname(__FILE__)
   set :models, Proc.new { root && File.join(root, 'models') }
-  set :build_number, '20101210047'
+  set :build_number, '201012100837'
   
   register Sinatra::R18n
   register Sinatra::Flash
@@ -143,7 +143,7 @@ class Cablegate < Sinatra::Base
     # if incoming mirror uri contains 'localhost' then ignore it.
     # todo: test the incoming URI to ensure it's ok.
     return {:error => "Incoming Mirror #{mirror['uri']} is unreachable."}.to_json if mirror['uri'].include?('localhost')
-    return {:error => 'Announced to Self'}.to_json if mirror['uri'] == my_uri
+    return {:error => 'Announced to Self'}.to_json if mirror['uri'] == @me.uri # ought never happen.
 
     # maybe we have already seen this mirror, in which case update the build number if it's changed, and update the lease time
     new_mirror = Mirror.find_by_uri(mirror['uri'])
@@ -155,7 +155,7 @@ class Cablegate < Sinatra::Base
       new_mirror.build_number = mirror['build_number'] unless new_mirror.build_number == mirror['build_number']
     end
     # update the lease time
-    new_mirror.lease_expires = (Time.now + 3600).utc unless new_mirror.name == 'default'
+    new_mirror.lease_expires = (Time.now + 3600).utc unless new_mirror.name == 'default' || new_mirror.name == 'self'
     new_mirror.save!
 
     @@log.debug("Incoming Mirror #{new_mirror.uri} of build #{new_mirror.build_number} expires at #{new_mirror.lease_expires}")
