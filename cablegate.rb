@@ -18,7 +18,7 @@ class Cablegate < Sinatra::Base
   enable  :sessions
   set :root, File.dirname(__FILE__)
   set :models, Proc.new { root && File.join(root, 'models') }
-  set :build_number, '201012082231'
+  set :build_number, '20101210047'
   
   register Sinatra::R18n
   register Sinatra::Flash
@@ -110,12 +110,17 @@ class Cablegate < Sinatra::Base
 
   get '/' do
     flash.now[:message] = "Cablegate Mirror — Build #{options.build_number}"
-    @mirrors = Mirror.active_mirrors
     my_uri = "http://#{request.host_with_port}"
     @me = know_thyself!(my_uri, options.build_number)
+    @mirrors = Mirror.active_mirrors
+    if @mirrors.empty? || @mirrors.size == 1
+      announce!
+      @mirrors = Mirror.active_mirrors
+    end
     haml :index
   end
 
+  # force an announce to all mirrors.
   get '/announce' do
     flash.now[:tip] = "Announced Self to Mirrors"
     my_uri = "http://#{request.host_with_port}"

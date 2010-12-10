@@ -17,7 +17,7 @@ end
 
 puts "Seeding database with default mirror"
 
-mirror = Mirror.create( :name => "default", :uri => "http://cablegate.heroku.com", :build_number => "201012082231")
+mirror = Mirror.create( :name => "default", :uri => "http://cablegate.heroku.com", :build_number => "not supplied")
 mirror.save!
 
 # add any other seeding here.
