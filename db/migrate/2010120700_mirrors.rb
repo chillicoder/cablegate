@@ -6,7 +6,7 @@ class Mirrors < ActiveRecord::Migration
       t.column :name, :string, :null => false
       t.column :build_number, :string, :null => false
       t.column :uri, :string, :null => false
-      t.column :lease_expires, :time, :null => true
+      t.column :lease_expires, :datetime, :null => true
     end
 
     # add an index for the email, username, and validation_token fields
