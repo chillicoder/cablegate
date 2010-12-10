@@ -20,8 +20,21 @@
       %tr<
         %th> URI
         %th> Build
+        %th> Expires
       - for m in @mirrors do
         %tr
           %td<
             %a{:href => m.uri} #{m.uri}
           %td> #{m.build_number}
+          %td> #{m.lease_expires ? m.lease_expires.strftime("%Y-%m-%dT%H:%M:%SZ") : 'Never'}
+    %h2 Main List of Wikileaks Mirrors.
+    %table
+      %tr<
+        %th> URI
+        %th> Build
+        %th> Expires
+      %tr<
+        %td<
+          %a{:href => 'http://wikileaks.ch/mirrors.html'}http://wikileaks.ch/mirrors.html
+        %td> Static List
+        %td> Never

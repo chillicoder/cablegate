@@ -26,6 +26,7 @@ class Cablegate < Sinatra::Base
   helpers Sinatra::MirrorHelpers
 
   @me = nil # need to wait for any incoming request before we know what our host name is.
+  @last_announce_time = Time.now - 3600 # when starting fresh always force an announce on first request.
 
   class << self
     def load_models!
@@ -104,27 +105,13 @@ class Cablegate < Sinatra::Base
   # if there is a new locale setting in the request then use it.
   before do
     session[:locale] = params[:locale] if params[:locale] #the r18n system will load it automatically
+    know_thyself!("http://#{request.host_with_port}", options.build_number)
   end
   
 ######################   ROUTES   #################################
 
   get '/' do
     flash.now[:message] = "Cablegate Mirror — Build #{options.build_number}"
-    my_uri = "http://#{request.host_with_port}"
-    @me = know_thyself!(my_uri, options.build_number)
-    @mirrors = Mirror.active_mirrors
-    if @mirrors.empty? || @mirrors.size == 1
-      announce!
-      @mirrors = Mirror.active_mirrors
-    end
-    haml :index
-  end
-
-  # force an announce to all mirrors.
-  get '/announce' do
-    flash.now[:tip] = "Announced Self to Mirrors"
-    my_uri = "http://#{request.host_with_port}"
-    @me = know_thyself!(my_uri, options.build_number)
     announce!
     @mirrors = Mirror.active_mirrors
     haml :index
@@ -132,6 +119,7 @@ class Cablegate < Sinatra::Base
 
   get '/mirrors' do
     content_type :json
+    announce!
     @mirrors = Mirror.active_mirrors
     return {:error => "No Active Mirrors Known"}.to_json if @mirrors == nil
     return @mirrors.to_json
@@ -144,30 +132,25 @@ class Cablegate < Sinatra::Base
     request.body.rewind # not sure why I have to do this.
     # incoming will be { :name, :uri, :build_number }
     mirror = JSON.parse request.body.read
-    return {:error => "Invalid Mirror Data"}.to_json if mirror['name'] == nil || mirror['uri'] == nil || mirror['build_number'] == nil
+    return {:error => "Invalid Mirror Data"}.to_json if mirror == nil || mirror['uri'] == nil || mirror['build_number'] == nil
     @@log.debug("Incoming Mirror data was acceptable.")
 
     # if incoming mirror uri contains 'localhost' then ignore it.
     # todo: test the incoming URI to ensure it's ok.
     return {:error => "Incoming Mirror #{mirror['uri']} is unreachable."}.to_json if mirror['uri'].include?('localhost')
-    @@log.debug("Incoming Mirror data was reachable (ie was not localhost).")
-
-    my_uri = "http://#{request.host_with_port}"
-    @me = know_thyself!(my_uri, options.build_number)
     return {:error => 'Announced to Self'}.to_json if mirror['uri'] == my_uri
-    @@log.debug("Not trying to announce to self.")
 
     # maybe we have already seen this mirror, in which case update the build number if it's changed, and update the lease time
     new_mirror = Mirror.find_by_uri(mirror['uri'])
     if new_mirror == nil
-      # add incoming mirror to db and set the lease_time
-      new_mirror = Mirror.create( :name => mirror['name'], :uri => mirror['uri'], :build_number => mirror['build_number'])
+      # add incoming mirror to db
+      new_mirror = Mirror.create( :name => mirror['uri'], :uri => mirror['uri'], :build_number => mirror['build_number'])
     else
       # update the build number if it's changed
       new_mirror.build_number = mirror['build_number'] unless new_mirror.build_number == mirror['build_number']
     end
     # update the lease time
-    new_mirror.lease_expires = Time.now.advance(:seconds => 3600) unless new_mirror.name == 'default'
+    new_mirror.lease_expires = Time.now + 3600 unless new_mirror.name == 'default'
     new_mirror.save!
 
     @@log.debug("Incoming Mirror #{new_mirror.uri} of build #{new_mirror.build_number} expires at #{new_mirror.lease_expires}")
