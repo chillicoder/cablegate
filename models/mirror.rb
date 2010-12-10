@@ -7,8 +7,7 @@ class Mirror < ActiveRecord::Base
   def to_json(*a)
     {
       'json_class'   => self.class.name,
-      'data'         => { :name => self.name, :build_number => self.build_number,
-                          :uri => self.uri, :lease_expires => self.lease_expires }
+      'data'         => { :name => self.uri, :uri => self.uri, :build_number => self.build_number, }
     }.to_json(*a)
   end
 

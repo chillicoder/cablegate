@@ -21,7 +21,7 @@
         %a{:href => 'http://twitter.com/search/%23wikileaks'} wikileaks
         tag in Twitter. Fork
         %a{:href=>'https://github.com/davesag/cablegate'}the sourcecode
-        if you wish.
+        if you wish. The Time now is #{Time.now.utc.strftime('%Y-%m-%dT%H:%M:%SZ')}
       - if @me != nil
         %p<
           This Mirror is running at #{@me.uri} built from release #{@me.build_number}.
