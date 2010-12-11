@@ -39,6 +39,14 @@ module Sinatra
           handle_announce(announce(m),m) unless m.uri == @me.uri # don't announce to self
         end
       end
+      mirrors = Mirror.active_mirrors
+      mirrors.delete(@me) unless mirrors == nil
+      if mirrors == nil || mirrors.size < 24
+        # search for more mirrors
+        mirrors.each do |m|
+          save_mirrors(get_mirrors(m))
+        end
+      end
     end
 
     # when did we last do an announce?
@@ -114,6 +122,36 @@ module Sinatra
         puts "Lease expiry for #{m.uri} now set to #{lx.strftime('%Y-%m-%dT%H:%M:%SZ')}"
       end
     end
+
+    def get_mirrors(from)
+      puts "Getting mirror list from #{from.uri}/mirrors"
+      req = Net::HTTP::Get.new('/mirrors', initheader = {'Content-Type' =>'application/json'})
+      uri = URI.parse(from.uri)
+      response = Net::HTTP.new(uri.host, uri.port).start {|http| http.request(req) }
+      if response == nil || response.code != '200'
+        puts "Could not get a sensible response from #{from.uri}"
+        # maybe nuke it
+        return []
+      end
+      # puts response.body
+      return JSON.parse response.body
+    end
+
+    def save_mirrors(mirror_list)
+      return if mirror_list == nil || mirror_list.empty?
+      mirror_list.each do |m|
+        mw = m['mirror']
+        uri = mw['uri']
+        puts "Store the mirror #{uri} if we don't already have it."
+        if Mirror.find_by_uri(uri) == nil
+          mm = Mirror.create(:name => uri, :uri => uri, :build_number => mw['build_number'])
+          mm.lease_expires = (Time.now + 3600).utc
+          mm.save!
+          puts "Added new mirror #{mm.uri}, expires #{mm.lease_expires.utc.strftime('%Y-%m-%dT%H:%M:%SZ')}"
+        end
+      end
+    end
+
   end
 
   helpers MirrorHelpers
