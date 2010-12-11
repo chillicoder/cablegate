@@ -35,8 +35,8 @@ Current Features
 
 * A static copy of the latest (or close to it) Cablegate pages as archived by wikileaks and distributed by bittorrent
 * Awareness of this codebase, and the build numbers as provided by wikileaks, via a simple announce mechanism
-* Manual forcing of Mirror announcements to other mirrors (ought not be needed now)
-* JSoN formatted export of known mirrors. (As in mirrors of this codebase, not all the known wikileaks mirrors but that's not a bad idea either.)
+* Automatic Mirror announcements to other mirrors
+* JSoN formatted export of known active and expired mirrors. (As in mirrors of this codebase, not all the known wikileaks mirrors but that's not a bad idea either.)
 
 Fork Me
 -------
@@ -64,5 +64,5 @@ Keeping Up to Date
 Plans
 -----
 
-* When the site contacts a new mirror it ought to find out which other mirrors are around and announce itself to them too. Right now mirrors only really know to register themselves, and know the default mirror at http://cablegate.heroku.com
+* The site tries to authorise on each request. It's a bug. I'll fix it.
 * I've not made a start on parsing the archive into a db format yet. I'm hoping that the archive is already in someone else's database and I can just copy or read from that. Hello wikileaks, I'm talking to you here.
