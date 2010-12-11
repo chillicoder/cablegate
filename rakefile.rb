@@ -15,9 +15,6 @@ namespace :db do
   task :environment do
     dbconfig = YAML.load(File.read('config/database.yml'))
 
-    # in frank.rb we configure for test, development and production only right now.
-    # and no matter what you sepcify, the tests are always run against the test database
-    # so be sure to seed all the databases before running this
     # %> RACK_ENV=test rake db:seed
     # %> RACK_ENV=development rake db:seed
     # %> RACK_ENV=production rake db:seed
@@ -46,6 +43,17 @@ namespace :db do
       end
     end
   end
+
+  desc 'Parse the flat html into date by running db/cable_parser.rb'
+  task(:parse => :seed) do
+    parser = File.join('db', 'cable_parser.rb')
+    if File.exists?(parser)
+      load(parser)
+    else
+      puts "WARNING -- No Cable file Parser found."
+    end
+  end
+
 end
 
 desc "run the tests"

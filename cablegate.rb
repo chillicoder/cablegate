@@ -163,4 +163,13 @@ class Cablegate < Sinatra::Base
     return {:build_number => @me.build_number}.to_json
   end
 
+  get '/cable/:refid' do
+    content_type :json
+    cable = Cable.find_by_reference_id(params[:refid])
+    if cable == nil
+      status 404
+      return {:error=>"Cable data not found"}
+    end
+    return cable.to_json
+  end
 end
