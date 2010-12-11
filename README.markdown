@@ -37,6 +37,8 @@ Current Features
 * Awareness of this codebase, and the build numbers as provided by wikileaks, via a simple announce mechanism
 * Automatic Mirror announcements to other mirrors
 * JSoN formatted export of known active and expired mirrors. (As in mirrors of this codebase, not all the known wikileaks mirrors but that's not a bad idea either.)
+* you can run heroku rake db:parse and that will parse the html files into the database.  The parse is a bit weak right now but it works ok
+* you can go to /cable/:reference_id and get a json formatted version of the cable with that ID
 
 Fork Me
 -------
@@ -65,4 +67,8 @@ Plans
 -----
 
 * The site tries to authorise on each request. It's a bug. I'll fix it.
-* I've not made a start on parsing the archive into a db format yet. I'm hoping that the archive is already in someone else's database and I can just copy or read from that. Hello wikileaks, I'm talking to you here.
+* Parsing of the cable data could be smarter.
+* needs a nice search tool UI
+* some visualisations would be nice.
+* need to decide how to handle updated to cable data
+
